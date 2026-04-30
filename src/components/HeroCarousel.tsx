@@ -52,10 +52,10 @@ export default function HeroCarousel() {
           <img
             src={images[currentIndex].url}
             alt={images[currentIndex].title}
-            className="w-full h-full object-cover brightness-[1.1] contrast-[1.05] saturate-[1.1]"
+            className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-16 text-white">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-8 md:p-16 text-white">
             <motion.h2
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

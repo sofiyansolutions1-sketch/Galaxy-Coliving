@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, ArrowRight, Mail, Phone } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, ArrowRight, Mail, Phone, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-1 lg:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-6 group">
               <img 
-                src="https://iili.io/BsV0men.png" 
+                src="https://i.postimg.cc/LX3ZSR12/Chat-GPT-Image-May-1-2026-12-26-07-AM.png" 
                 alt="Galaxy Logo" 
                 className="h-8 md:h-10 w-auto object-contain"
                 referrerPolicy="no-referrer"
@@ -27,6 +27,9 @@ export default function Footer() {
               </a>
               <a href="tel:+917793939365" className="flex items-center gap-2 text-slate-300 hover:text-brand-400 transition-all text-sm">
                 <Phone size={16} /> Admin: +91 77939 39365
+              </a>
+              <a href="https://wa.me/917793939365" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-300 hover:text-brand-400 transition-all text-sm">
+                <MessageCircle size={16} className="text-green-500" /> WhatsApp: +91 77939 39365
               </a>
             </div>
             <div className="flex gap-4">

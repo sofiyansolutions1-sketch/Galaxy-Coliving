@@ -18,6 +18,7 @@ import Gallery from './components/Gallery';
 import InquiryForm from './components/InquiryForm';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import FloatingActions from './components/FloatingActions';
 
 export default function App() {
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
@@ -61,6 +62,7 @@ export default function App() {
         />
       </main>
       <Footer />
+      <FloatingActions />
     </div>
   );
 }

@@ -30,11 +30,11 @@ export default function Navbar({ onBookClick }: NavbarProps) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white shadow-sm py-2`}
     >
-      <div className="w-full px-4 md:px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2 group">
+      <div className="w-full px-2 md:px-4 flex justify-between items-center">
+        <a href="#" className="flex items-center gap-1.5 group">
           <div className="relative">
             <img 
-              src="https://iili.io/BsV0men.png" 
+              src="https://i.postimg.cc/LX3ZSR12/Chat-GPT-Image-May-1-2026-12-26-07-AM.png" 
               alt="Galaxy Logo" 
               className="h-8 md:h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
