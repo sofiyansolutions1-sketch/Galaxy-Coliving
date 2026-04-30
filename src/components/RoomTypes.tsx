@@ -5,20 +5,20 @@ const roomTypes = [
   {
     type: '3 Sharing',
     description: 'Spacious shared living with premium amenities.',
-    features: ['Comfortable Beds', 'Individual Lockers', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC'],
+    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/Bs1kdaR.jpg',
     popular: true
   },
   {
     type: '4 Sharing',
     description: 'Budget-friendly comfort for professionals and students.',
-    features: ['Twin Beds', 'Secure Lockers', 'Common TV Lounge', 'Daily Cleaning', 'AC & Non-AC'],
+    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/BsEGhps.jpg'
   },
   {
     type: '5 Sharing',
     description: 'Our most affordable luxury sharing option.',
-    features: ['Comfortable Bedding', 'Locker Facility', 'Attached Bathroom', 'Water Purifier', 'AC & Non-AC'],
+    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/BsEwWiJ.jpg'
   }
 ];

@@ -29,7 +29,7 @@ const reasons = [
   }
 ];
 
-export default function WhyChooseUs() {
+export default function WhyChoiceGalaxy() {
   return (
     <section className="py-12 bg-slate-900 text-white relative overflow-hidden">
       {/* Abstract Background Decoration */}
@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
           >
             <span className="text-brand-400 font-bold tracking-widest uppercase text-[10px]">The Choice is Clear</span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">Why Choice Galaxy?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4 uppercase tracking-tighter">Why Choose Galaxy?</h2>
             <p className="text-slate-400 text-sm md:text-base mb-6 leading-relaxed">
               We provide a community and lifestyle. Our commitment to quality makes us the top-rated PG in Warangal.
             </p>

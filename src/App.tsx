@@ -12,7 +12,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import HeroCarousel from './components/HeroCarousel';
 import Facilities from './components/Facilities';
-import WhyChooseUs from './components/WhyChooseUs';
+import WhyChoiceGalaxy from './components/WhyChoiceGalaxy';
 import RoomTypes from './components/RoomTypes';
 import Gallery from './components/Gallery';
 import InquiryForm from './components/InquiryForm';
@@ -50,7 +50,7 @@ export default function App() {
         <RoomTypes onInquireClick={openInquiry} />
         <Gallery />
         <Facilities />
-        <WhyChooseUs />
+        <WhyChoiceGalaxy />
         <Location />
         
         {/* Global Inquiry Modal */}
