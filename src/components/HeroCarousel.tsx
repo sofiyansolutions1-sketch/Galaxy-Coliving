@@ -4,24 +4,24 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   {
-    url: 'https://iili.io/Bs1jJVf.jpg',
-    title: 'Galaxy Coliving',
-    description: 'A perfect place for students and working professionals.'
+    url: 'https://i.postimg.cc/g2Myvt68/Chat-GPT-Image-Apr-30-2026-05-16-50-PM.png',
+    title: 'Galaxy Co-Living',
+    description: 'Premier accommodation in the heart of the city.'
   },
   {
-    url: 'https://iili.io/Bs1NbHB.jpg',
-    title: 'Modern Living',
-    description: 'Comfortable spaces designed for your lifestyle.'
+    url: 'https://i.postimg.cc/15sDb1GL/Chat-GPT-Image-Apr-30-2026-05-16-57-PM.png',
+    title: 'Modern Architecture',
+    description: 'Safe, secure, and stylish living spaces.'
   },
   {
-    url: 'https://iili.io/Bs1kdaR.jpg',
-    title: 'Premium Spaces',
-    description: 'Fully furnished rooms with all modern amenities.'
+    url: 'https://i.postimg.cc/0Q47LzCX/Chat-GPT-Image-Apr-30-2026-05-17-02-PM.png',
+    title: 'Premium Rooms',
+    description: 'Fully furnished spaces designed for your comfort.'
   },
   {
-    url: 'https://iili.io/Bs1Unb2.jpg',
-    title: 'Stay in Luxury',
-    description: 'Experience the best coliving in the heart of the city.'
+    url: 'https://i.postimg.cc/ZnqDLv53/Chat-GPT-Image-Apr-30-2026-05-17-55-PM.png',
+    title: 'Luxury redefined',
+    description: 'Experience the best co-living features today.'
   }
 ];
 
@@ -39,7 +39,7 @@ export default function HeroCarousel() {
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden group" id="home">
+    <div className="relative w-full h-[50vh] md:h-[65vh] overflow-hidden group" id="home">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -49,14 +49,13 @@ export default function HeroCarousel() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/60 to-transparent z-10" />
           <img
             src={images[currentIndex].url}
             alt={images[currentIndex].title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[1.1] contrast-[1.05] saturate-[1.1]"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 carousel-gradient flex flex-col justify-end p-8 md:p-16 text-white">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-16 text-white">
             <motion.h2
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}

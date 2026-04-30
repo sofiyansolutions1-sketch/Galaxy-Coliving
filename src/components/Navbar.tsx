@@ -28,26 +28,24 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-8'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white shadow-sm py-2`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-4 group">
-          <div className="relative p-1">
+      <div className="w-full px-4 md:px-6 flex justify-between items-center">
+        <a href="#" className="flex items-center gap-2 group">
+          <div className="relative">
             <img 
               src="https://iili.io/BsV0men.png" 
               alt="Galaxy Logo" 
-              className="h-12 md:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+              className="h-8 md:h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
               referrerPolicy="no-referrer"
             />
           </div>
-          <div className="flex flex-col">
-            <span className={`font-display text-2xl md:text-4xl font-black leading-none tracking-tighter transition-all duration-500 ${scrolled ? 'text-brand-900' : 'text-white drop-shadow-md'}`}>
+          <div className="flex flex-row items-baseline gap-1">
+            <span className="font-display text-base md:text-lg font-black leading-none tracking-tight text-brand-900">
               GALAXY
             </span>
-            <span className={`text-[10px] md:text-xs font-bold leading-none tracking-[0.3em] uppercase mt-1 transition-all duration-500 ${scrolled ? 'text-brand-600' : 'text-brand-400 drop-shadow-sm'}`}>
-              Co-Living
+            <span className="font-display text-base md:text-lg font-black leading-none tracking-tight text-brand-900">
+              CO-LIVING
             </span>
           </div>
         </a>
@@ -58,9 +56,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                scrolled ? 'text-slate-600 hover:text-brand-600' : 'text-white/80 hover:text-white'
-              }`}
+              className="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors"
             >
               {link.name}
             </a>
@@ -75,9 +71,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden p-2 rounded-lg transition-colors ${
-            scrolled ? 'text-slate-900' : 'text-white'
-          }`}
+          className="md:hidden p-2 rounded-lg text-slate-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}

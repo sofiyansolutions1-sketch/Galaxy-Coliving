@@ -31,11 +31,13 @@ export default function Location() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
                 {highlights.map((item) => (
-                  <div key={item.name} className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-100">
-                    <div className="w-2 h-2 rounded-full bg-brand-500 flex-shrink-0" />
+                  <div key={item.name} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100 group transition-all hover:bg-white hover:shadow-md">
+                    <div className="flex-shrink-0 bg-brand-50 p-2 rounded-xl group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                      <MapPin className="w-5 h-5 text-brand-600 group-hover:text-white transition-colors" />
+                    </div>
                     <div>
-                      <p className="text-slate-900 font-bold text-sm">{item.name}</p>
-                      <p className="text-slate-500 text-xs">{item.dist} away</p>
+                      <p className="text-slate-900 font-bold text-sm tracking-tight">{item.name}</p>
+                      <p className="text-slate-500 text-xs font-medium">{item.dist} away</p>
                     </div>
                   </div>
                 ))}

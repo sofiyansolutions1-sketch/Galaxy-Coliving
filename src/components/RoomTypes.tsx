@@ -1,24 +1,21 @@
 import { motion } from 'motion/react';
-import { Users, Bed, Check } from 'lucide-react';
+import { Users } from 'lucide-react';
 
 const roomTypes = [
   {
     type: '3 Sharing',
     description: 'Spacious shared living with premium amenities.',
-    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/Bs1kdaR.jpg',
     popular: true
   },
   {
     type: '4 Sharing',
     description: 'Budget-friendly comfort for professionals and students.',
-    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/BsEGhps.jpg'
   },
   {
     type: '5 Sharing',
     description: 'Our most affordable luxury sharing option.',
-    features: ['Comfortable Beds', 'Locker Facility', 'Attached Bathroom', 'High-Speed WiFi', 'AC & Non-AC', 'Water Purifier'],
     image: 'https://iili.io/BsEwWiJ.jpg'
   }
 ];
@@ -79,17 +76,8 @@ export default function RoomTypes({ onInquireClick }: RoomTypesProps) {
                   <span className="text-brand-600 font-bold">Contact for Pricing</span>
                 </div>
 
-                <ul className="space-y-4 mb-8">
-                  {room.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3 text-slate-600 text-sm">
-                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-brand-50 flex items-center justify-center">
-                        <Check className="w-3 h-3 text-brand-600" />
-                      </div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
+                {/* Features removed as requested */}
+                
                 <button
                   onClick={() => onInquireClick(room.type)}
                   className={`w-full py-4 rounded-2xl font-bold transition-all ${
