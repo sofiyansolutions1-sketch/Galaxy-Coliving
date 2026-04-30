@@ -49,6 +49,7 @@ export default function HeroCarousel() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="absolute inset-0"
         >
+          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/60 to-transparent z-10" />
           <img
             src={images[currentIndex].url}
             alt={images[currentIndex].title}

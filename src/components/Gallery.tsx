@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const bedImages = [
+  'https://iili.io/BsVnu9I.jpg',
   'https://iili.io/Bs1kdaR.jpg',
   'https://iili.io/BsEGhps.jpg',
   'https://iili.io/BsEwWiJ.jpg',

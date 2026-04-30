@@ -1,4 +1,4 @@
-import { Home, Facebook, Twitter, Instagram, Linkedin, ArrowRight, Mail, Phone } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, ArrowRight, Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -6,9 +6,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 text-brand-400 font-display text-2xl font-bold tracking-tight mb-6">
-              <Home className="w-8 h-8" />
-              <span>Galaxy Co-Living & Boys Hostel</span>
+            <a href="#" className="flex items-center gap-3 mb-6 group">
+              <img 
+                src="https://iili.io/BsV0men.png" 
+                alt="Galaxy Logo" 
+                className="h-12 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <div className="flex flex-col">
+                <span className="text-brand-400 font-display text-2xl md:text-3xl font-black leading-none tracking-tighter">GALAXY</span>
+                <span className="text-slate-500 text-[10px] font-bold leading-none tracking-[0.15em] uppercase mt-1">Co-Living & Boys Hostel</span>
+              </div>
             </a>
             <p className="text-slate-400 leading-relaxed mb-6">
               Comfortable Living | Affordable Pricing

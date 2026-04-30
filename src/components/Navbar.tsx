@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Home } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const navLinks = [
@@ -28,14 +28,28 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-8'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-2 text-brand-600 font-display text-2xl font-bold tracking-tight">
-          <Home className="w-8 h-8" />
-          <span className={scrolled ? 'text-slate-900' : 'text-white'}>Galaxy Coliving</span>
+      <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 flex justify-between items-center">
+        <a href="#" className="flex items-center gap-4 group">
+          <div className="relative p-1">
+            <img 
+              src="https://iili.io/BsV0men.png" 
+              alt="Galaxy Logo" 
+              className="h-12 md:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className={`font-display text-2xl md:text-4xl font-black leading-none tracking-tighter transition-all duration-500 ${scrolled ? 'text-brand-900' : 'text-white drop-shadow-md'}`}>
+              GALAXY
+            </span>
+            <span className={`text-[10px] md:text-xs font-bold leading-none tracking-[0.3em] uppercase mt-1 transition-all duration-500 ${scrolled ? 'text-brand-600' : 'text-brand-400 drop-shadow-sm'}`}>
+              Co-Living
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}
