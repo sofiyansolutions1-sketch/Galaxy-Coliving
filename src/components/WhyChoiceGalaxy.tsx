@@ -15,37 +15,47 @@ const reasons = [
   {
     icon: Banknote,
     title: 'Flexible Payment Plans',
-    desc: 'Daily, Weekly, Monthly, and Yearly packages designed for your convenience.'
+    desc: 'Daily, Weekly, Monthly, and Yearly.'
   },
   {
     icon: Users,
     title: 'Separate Floors',
-    desc: 'Dedicated sectors for Students & Working Professionals for a peaceful stay.'
+    desc: 'For Students & Working Professionals.'
   },
   {
     icon: LayoutGrid,
     title: 'Smart Sharing',
-    desc: 'Flexible room options offering the perfect balance of privacy and comfort.'
+    desc: 'Perfect balance of privacy and comfort.'
   },
   {
     icon: Sparkles,
     title: 'Value That Makes Sense',
-    desc: 'Premium co-living experience at pricing that’s practical and affordable.'
+    desc: 'Premium experience, practical pricing.'
   },
   {
     icon: Star,
-    title: '98% Satisfaction Rate',
-    desc: 'Top-rated experience based on consistent resident feedback.'
+    title: 'Google Rating',
+    desc: 'Top-rated based on verified feedback.'
+  },
+  {
+    icon: Smile,
+    title: '98% Satisfaction',
+    desc: 'Consistent top resident experiences.'
   },
   {
     icon: ShieldCheck,
     title: 'Safe & Secure',
-    desc: '24/7 CCTV and biometric access for your complete peace of mind.'
+    desc: '24/7 CCTV and biometric access.'
   },
   {
     icon: Navigation,
     title: 'Prime Location',
-    desc: 'Strategic access to transport, education, and work hubs.'
+    desc: 'Access to transport and work hubs.'
+  },
+  {
+    icon: CheckCircle2,
+    title: 'Quality Assured',
+    desc: 'Highest standards of hygiene & service.'
   }
 ];
 
@@ -57,11 +67,12 @@ export default function WhyChoiceGalaxy() {
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-brand-500 rounded-full blur-[120px] opacity-10 translate-x-1/3 translate-y-1/3" />
       
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="xl:col-span-5"
           >
             <span className="text-brand-400 font-bold tracking-widest uppercase text-xs">Not Just a Stay. A Better Way to Live.</span>
             <h2 className="text-3xl md:text-5xl font-black mt-3 mb-6 leading-tight tracking-tighter">
@@ -71,52 +82,31 @@ export default function WhyChoiceGalaxy() {
             <p className="text-slate-400 text-base md:text-lg mb-8 leading-relaxed">
               At Galaxy Co-Living, we redefine everyday living by combining comfort, convenience, and community into one seamless experience.
             </p>
-            
-            <div className="space-y-4 mb-10">
-              <div className="flex items-start gap-3 p-3 bg-white/5 rounded-lg border border-white/10">
-                <CheckCircle2 className="text-brand-400 w-5 h-5 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-white text-sm font-bold">Google Rating & 98% Satisfaction</p>
-                  <p className="text-slate-400 text-xs">Based on verified resident feedback</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-3 bg-white/5 rounded-lg border border-white/10">
-                <CheckCircle2 className="text-brand-400 w-5 h-5 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-white text-sm font-bold">Separate Floors Available</p>
-                  <p className="text-slate-400 text-xs">For Students & Working Professionals</p>
-                </div>
-              </div>
-            </div>
 
-            <motion.p 
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="text-brand-400 font-display font-bold text-sm italic"
-            >
-              Galaxy Co-Living — Where Comfort Meets Convenience.
-            </motion.p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 xl:col-span-7">
             {reasons.map((reason, i) => (
               <motion.div
                 key={reason.title}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.05 }}
                 whileHover={{ y: -5 }}
-                className={`p-5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-500/30 transition-all ${
-                  i === 0 ? 'col-span-2 bg-gradient-to-r from-brand-600/20 to-transparent' : ''
+                className={`p-4 sm:p-5 rounded-2xl flex flex-col justify-center aspect-square transition-all ${
+                  i === 8 
+                    ? 'bg-gradient-to-br from-brand-600/30 to-brand-800/10 border border-brand-500/50 hover:bg-brand-600/40 hover:border-brand-400' 
+                    : 'bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-500/30'
                 }`}
               >
-                <div className="w-10 h-10 rounded-xl bg-brand-500/20 flex items-center justify-center mb-4">
-                  <reason.icon className="text-brand-400 w-5 h-5" />
+                <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center mb-3 sm:mb-4 ${
+                  i === 8 ? 'bg-brand-500/40 text-white' : 'bg-brand-500/20 text-brand-400'
+                }`}>
+                  <reason.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <h3 className="text-base font-black mb-2 tracking-tight">{reason.title}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">
+                <h3 className="text-sm sm:text-base font-black mb-1 sm:mb-2 tracking-tight line-clamp-2">{reason.title}</h3>
+                <p className="text-[10px] sm:text-xs text-slate-400 leading-relaxed line-clamp-3">
                   {reason.desc}
                 </p>
               </motion.div>
