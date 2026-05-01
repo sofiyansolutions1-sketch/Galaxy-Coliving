@@ -30,23 +30,25 @@ export default function Navbar({ onBookClick }: NavbarProps) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white shadow-sm py-2`}
     >
-      <div className="w-full px-2 md:px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center gap-1.5 group">
-          <div className="relative">
+      <div className="w-full px-0 flex justify-between items-center">
+        <a href="#" className="flex items-center gap-0 group">
+          <div className="relative shrink-0">
             <img 
               src="https://i.postimg.cc/LX3ZSR12/Chat-GPT-Image-May-1-2026-12-26-07-AM.png" 
               alt="Galaxy Logo" 
-              className="h-8 md:h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
+              className="h-12 md:h-16 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
           </div>
-          <div className="flex flex-row items-baseline gap-1">
-            <span className="font-display text-base md:text-lg font-black leading-none tracking-tight text-brand-900">
+          <div className="flex flex-col items-center justify-center gap-0.5 md:gap-1 -ml-2 md:-ml-3">
+            <span className="font-display text-2xl md:text-3xl font-black leading-none tracking-tighter text-brand-400 uppercase">
               GALAXY
             </span>
-            <span className="font-display text-base md:text-lg font-black leading-none tracking-tight text-brand-900">
-              CO-LIVING
-            </span>
+            <div className="bg-slate-900 px-2 py-0.5 rounded-full border border-slate-200 shadow-sm">
+              <span className="block font-display text-[8px] md:text-[10px] font-black leading-none tracking-widest text-white whitespace-nowrap">
+                CO-LIVING & BOYS HOSTEL
+              </span>
+            </div>
           </div>
         </a>
 

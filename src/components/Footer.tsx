@@ -6,16 +6,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-6 group">
+            <a href="#" className="flex items-center gap-0 mb-6 group">
               <img 
                 src="https://i.postimg.cc/LX3ZSR12/Chat-GPT-Image-May-1-2026-12-26-07-AM.png" 
                 alt="Galaxy Logo" 
-                className="h-8 md:h-10 w-auto object-contain"
+                className="h-10 md:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
-              <div className="flex flex-row items-baseline gap-1">
-                <span className="text-brand-400 font-display text-lg md:text-xl font-black leading-none tracking-tight">GALAXY</span>
-                <span className="text-brand-400 font-display text-lg md:text-xl font-black leading-none tracking-tight">CO-LIVING</span>
+              <div className="flex flex-col items-center justify-center gap-0.5 md:gap-1 -ml-1 md:-ml-2">
+                <span className="font-display text-xl md:text-2xl font-black leading-none tracking-tight text-brand-400 uppercase">
+                  GALAXY
+                </span>
+                <div className="bg-white/10 px-1.5 py-0.5 rounded-full border border-white/20">
+                  <span className="block font-display text-[7px] md:text-[9px] font-bold leading-none tracking-wider text-white whitespace-nowrap">
+                    CO-LIVING & BOYS HOSTEL
+                  </span>
+                </div>
               </div>
             </a>
             <p className="text-slate-400 leading-relaxed mb-6">

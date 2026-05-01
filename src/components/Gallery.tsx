@@ -48,7 +48,7 @@ export default function Gallery() {
           <div className="max-w-7xl mx-auto px-6 mb-6">
             <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
               <span className="w-8 h-1 bg-brand-600 rounded-full"></span>
-              PG Exterior & Area
+              Co-Living Area View
             </h3>
           </div>
           <div className="flex overflow-hidden group">
