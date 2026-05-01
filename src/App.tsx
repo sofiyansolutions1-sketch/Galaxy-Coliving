@@ -10,7 +10,7 @@
 
 import { useState } from 'react';
 import Navbar from './components/Navbar';
-import HeroCarousel from './components/HeroCarousel';
+import HeroVideo from './components/HeroVideo';
 import Facilities from './components/Facilities';
 import WhyChoiceGalaxy from './components/WhyChoiceGalaxy';
 import RoomTypes from './components/RoomTypes';
@@ -32,8 +32,8 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar onBookClick={() => openInquiry()} />
-      <main>
-        <HeroCarousel />
+      <main className="pt-20 sm:pt-24 md:pt-28">
+        <HeroVideo />
         
         {/* Intro Section */}
         <section className="py-20 bg-white">
