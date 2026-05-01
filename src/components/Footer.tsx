@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4">
-              {['Home', 'Rooms', 'Facilities', 'Gallery', 'Pricing', 'Contact'].map((link) => (
+              {['Home', 'Rooms', 'Facilities', 'Gallery'].map((link) => (
                 <li key={link}>
                   <a href={`#${link.toLowerCase()}`} className="text-slate-400 hover:text-brand-400 transition-all flex items-center gap-2 group">
                     <ArrowRight size={14} className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />

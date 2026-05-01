@@ -33,7 +33,7 @@ const rowFacilities = [...facilityImages, ...facilityImages];
 
 export default function Gallery() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="gallery" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
         <span className="text-brand-600 font-bold tracking-widest uppercase text-sm">Tour Our Spaces</span>
         <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">Explore Galaxy Co-Living</h2>
