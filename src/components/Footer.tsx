@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, ArrowRight, Mail, Phone, MessageCircle } from 'lucide-react';
+import { ArrowRight, Mail, Phone, MessageCircle, Youtube, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -41,14 +41,11 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition-all text-slate-300 hover:text-white">
-                <Instagram size={20} />
+              <a href="https://www.youtube.com/@GALAXYCO-LIVINGBOYSHOSTEL" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition-all text-slate-300 hover:text-white">
+                <Youtube size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition-all text-slate-300 hover:text-white">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition-all text-slate-300 hover:text-white">
-                <Linkedin size={20} />
+              <a href="https://www.google.com/maps/place/GALAXY+CO-LIVING+%26+BOYS+HOSTEL/@18.0096393,79.5549822,664m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a334f1f3c8b6ae9:0xff5a39e5312e80c6!8m2!3d18.0096393!4d79.5549822!16s%2Fg%2F11xv2z5063" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-brand-600 transition-all text-slate-300 hover:text-white">
+                <MapPin size={20} />
               </a>
             </div>
           </div>
