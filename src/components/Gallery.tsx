@@ -12,6 +12,7 @@ const exteriorImages = [
 ];
 
 const roomImages = [
+  'https://iili.io/BLfrOVp.png',
   'https://i.postimg.cc/dt6V1zz8/Chat-GPT-Image-Apr-30-2026-05-45-24-PM.png',
   'https://i.postimg.cc/ZnqDLv53/Chat-GPT-Image-Apr-30-2026-05-17-55-PM.png',
   'https://i.postimg.cc/0Q47LzCX/Chat-GPT-Image-Apr-30-2026-05-17-02-PM.png',
