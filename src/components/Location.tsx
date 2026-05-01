@@ -14,7 +14,7 @@ export default function Location() {
     <section id="location" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-white rounded-[3rem] overflow-hidden border border-slate-100 shadow-2xl shadow-slate-200/50 flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 p-8 md:p-12 lg:p-20 flex flex-col justify-center">
+          <div className="lg:w-1/2 p-6 md:p-12 lg:p-20 flex flex-col justify-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -23,40 +23,40 @@ export default function Location() {
               <div className="flex items-center gap-2 text-brand-600 font-bold tracking-widest uppercase text-xs mb-4">
                 <MapPin size={16} /> 📍 Location Highlights
               </div>
-              <h2 className="text-4xl font-bold mt-2 mb-6">Prime Location Advantage</h2>
-              <p className="text-slate-500 text-lg mb-8 leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 tracking-tight">Prime Location Advantage</h2>
+              <p className="text-slate-500 text-base md:text-lg mb-8 leading-relaxed">
                 Galaxy Coliving is strategically positioned to give you easy access to key landmarks, 
                 educational institutes, and daily essentials—all within walking distance.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-10">
                 {highlights.map((item) => (
-                  <div key={item.name} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100 group transition-all hover:bg-white hover:shadow-md">
+                  <div key={item.name} className="flex items-center gap-3 p-3 md:p-4 bg-slate-50 rounded-2xl border border-slate-100 group transition-all hover:bg-white hover:shadow-md">
                     <div className="flex-shrink-0 bg-brand-50 p-2 rounded-xl group-hover:bg-brand-600 group-hover:text-white transition-colors">
-                      <MapPin className="w-5 h-5 text-brand-600 group-hover:text-white transition-colors" />
+                      <MapPin className="w-4 h-4 md:w-5 md:h-5 text-brand-600 group-hover:text-white transition-colors" />
                     </div>
                     <div>
                       <p className="text-slate-900 font-bold text-sm tracking-tight">{item.name}</p>
-                      <p className="text-slate-500 text-xs font-medium">{item.dist} away</p>
+                      <p className="text-slate-500 text-[11px] md:text-xs font-medium">{item.dist} away</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="flex wrap gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <a 
                   href="https://www.google.com/maps/place/GALAXY+CO-LIVING+%26+BOYS+HOSTEL/@18.0096393,79.5549822,664m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a334f1f3c8b6ae9:0xff5a39e5312e80c6!8m2!3d18.0096393!4d79.5549822!16s%2Fg%2F11xv2z5063" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-brand-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-700 transition-all shadow-lg shadow-brand-500/20"
+                  className="flex items-center justify-center gap-2 bg-brand-600 text-white px-6 py-3.5 md:py-4 rounded-2xl font-bold hover:bg-brand-700 transition-all shadow-lg shadow-brand-500/20 w-full sm:w-auto text-sm md:text-base"
                 >
-                  <Navigation className="w-5 h-5" /> Get Directions
+                  <Navigation className="w-4 h-4 md:w-5 md:h-5" /> Get Directions
                 </a>
                 <a 
                   href="#contact"
-                  className="flex items-center gap-2 border border-slate-200 text-slate-900 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all"
+                  className="flex items-center justify-center gap-2 border border-slate-200 text-slate-900 px-6 py-3.5 md:py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all w-full sm:w-auto text-sm md:text-base"
                 >
-                  Contact Concierge <ExternalLink className="w-5 h-5" />
+                  Contact Concierge <ExternalLink className="w-4 h-4 md:w-5 md:h-5" />
                 </a>
               </div>
             </motion.div>

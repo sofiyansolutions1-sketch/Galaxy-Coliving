@@ -44,7 +44,7 @@ export default function Facilities() {
           className="mb-12"
         >
           <span className="text-brand-600 font-bold tracking-widest uppercase text-xs">Features</span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-4">Our PG Amenities</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-4">Our Co-living Amenities</h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
             Everything you need for a hassle-free, luxury lifestyle in the heart of the city.
           </p>

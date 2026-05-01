@@ -43,7 +43,7 @@ export default function Gallery() {
       </div>
 
       <div className="flex flex-col gap-12 md:gap-16">
-        {/* Section 1: PG Out-of-Area / Exterior (Left scrolling) */}
+        {/* Section 1: Co-Living Out-of-Area / Exterior (Left scrolling) */}
         <div className="relative">
           <div className="max-w-7xl mx-auto px-6 mb-6">
             <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
@@ -65,7 +65,7 @@ export default function Gallery() {
                 <div key={`ext-${i}`} className="w-[300px] h-[200px] md:w-[450px] md:h-[300px] rounded-3xl overflow-hidden flex-shrink-0 shadow-xl shadow-slate-200/50 border border-slate-100">
                   <img 
                     src={src} 
-                    alt="PG Exterior" 
+                    alt="Co-Living Exterior" 
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
                     loading="lazy"
                     referrerPolicy="no-referrer"
@@ -76,7 +76,7 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Section 2: PG Rooms (Right scrolling) */}
+        {/* Section 2: Co-Living Rooms (Right scrolling) */}
         <div className="relative">
           <div className="max-w-7xl mx-auto px-6 mb-6">
             <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
