@@ -3,7 +3,6 @@ import {
   Sparkles, 
   Smile, 
   ShieldCheck, 
-  CheckCircle2, 
   Users, 
   LayoutGrid, 
   Star, 
@@ -51,11 +50,6 @@ const reasons = [
     icon: Navigation,
     title: 'Prime Location',
     desc: 'Access to transport and work hubs.'
-  },
-  {
-    icon: CheckCircle2,
-    title: 'Quality Assured',
-    desc: 'Highest standards of hygiene & service.'
   }
 ];
 
@@ -94,15 +88,9 @@ export default function WhyChoiceGalaxy() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
                 whileHover={{ y: -5 }}
-                className={`p-4 sm:p-5 rounded-2xl flex flex-col justify-center aspect-square transition-all ${
-                  i === 8 
-                    ? 'bg-gradient-to-br from-brand-600/30 to-brand-800/10 border border-brand-500/50 hover:bg-brand-600/40 hover:border-brand-400' 
-                    : 'bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-500/30'
-                }`}
+                className="p-4 sm:p-5 rounded-2xl flex flex-col justify-center aspect-square transition-all bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-500/30"
               >
-                <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center mb-3 sm:mb-4 ${
-                  i === 8 ? 'bg-brand-500/40 text-white' : 'bg-brand-500/20 text-brand-400'
-                }`}>
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center mb-3 sm:mb-4 bg-brand-500/20 text-brand-400">
                   <reason.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <h3 className="text-sm sm:text-base font-black mb-1 sm:mb-2 tracking-tight line-clamp-2">{reason.title}</h3>
