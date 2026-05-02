@@ -29,7 +29,7 @@ export default function HeroVideo() {
             transition={{ delay: 0.4 }}
             className="text-xs sm:text-sm md:text-base text-slate-200 drop-shadow-md truncate"
           >
-            <span className="hidden sm:inline">— </span>Premier accommodation in the heart of the city.
+            <span className="hidden sm:inline">— </span>Luxury accommodation in the heart of the city.
           </motion.p>
         </div>
       </div>
